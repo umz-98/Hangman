@@ -41,6 +41,12 @@ class Hangman:
         Asks the user for a letter.
     '''
     def __init__(self, word_list, num_lives=5):
+        word_list = random.choice(['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon'])
+        word_guessed = 
+        num_lives = 5
+        print('"The mystery word has {len(self.word)} characters" (The number of letters is NOT the UNIQUE number of letters)')
+        print({word_guessed})
+
         # TODO 2: Initialize the attributes as indicated in the docstring
         # TODO 2: Print two message upon initialization:
         # 1. "The mystery word has {len(self.word)} characters" (The number of letters is NOT the UNIQUE number of letters)
@@ -73,6 +79,9 @@ class Hangman:
         2. If the character is a single character
         If it passes both checks, it calls the check_letter method.
         '''
+        x = 'pick a letter'
+        letter = x
+        if x == a
         # TODO 1: Ask the user for a letter iteratively until the user enters a valid letter
         # TODO 1: Assign the letter to a variable called `letter`
         # TODO 1: The letter has to comply with the following criteria: It has to be a single character. If it is not, print "Please, enter just one character"
@@ -83,6 +92,13 @@ class Hangman:
 def play_game(word_list):
     # As an aid, part of the code is already provided:
     game = Hangman(word_list, num_lives=5)
+    while True:
+        game.ask_letter()
+        if game.num_lives == 0:
+            print(f'sorry you lost! The word was{game.word}')
+            break
+        elif game.num_letters == 0:
+            print('Congratulations you won mate!')
     # TODO 1: To test this task, you can call the ask_letter method
     # TODO 2: To test this task, upon initialization, two messages should be printed 
     # TODO 3: To test this task, you call the ask_letter method and check if the letter is in the word
