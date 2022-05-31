@@ -13,16 +13,16 @@ Code written for a traditional hangman game.
 - The code makes use of object oriented programming and monitors the 'number of lives' and the 'number of letters' (see below). This monitoring is done to execute the game.
 
 ```python
-"""    for i in range (len(self.word)):
+"""for i in range (len(self.word)):
             if new_letter.lower() in self.word[i]:
                 self.word_guessed[i] = new_letter
-        if new_letter.lower() in self.word:
+     if new_letter.lower() in self.word:
             print('correct!')
             self.num_letters -= 1
-        else:
+     else:
             print('not in the word mate')
             self.num_lives -= 1
-        pass"""
+     pass"""
 ```
 
 ### To improve
